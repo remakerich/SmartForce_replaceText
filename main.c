@@ -5,13 +5,13 @@
 #include <time.h>
 #define BUFF 1000
 
-void greeting();
 int replaceFn(char *str, char *oldtext, char *newtext);
 void genLog(char *userdir, int i, char *oldtext, char *newtext, char *filename);
 
 int main()
 {
-    greeting();
+    printf("\nChange text in all (.txt) files of directory.\n");
+    printf("Enter directory:\n");
     char userdir[BUFF];
     char oldtext[BUFF], newtext[BUFF];
     char path[BUFF];
@@ -118,10 +118,4 @@ void genLog(char *userdir, int i, char *oldtext, char *newtext, char *filename)
     fputs(path, fLog);
     fprintf(fLog, "\nLine #%d: '%s' -> '%s'\n\n", i, oldtext, newtext);
     fclose(fLog);
-}
-
-void greeting()
-{
-     printf("\nChange text in all (.txt) files of directory.\n");
-     printf("Enter directory:\n");
 }
