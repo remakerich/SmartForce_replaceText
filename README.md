@@ -1,6 +1,6 @@
 # SmartForce_replaceText
 
-Задание на позицию Junior Backend Developer
+Задание:
 
 Часть 1.
 
